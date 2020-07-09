@@ -27,9 +27,9 @@ class CustomDatePickerView: UIView {
                             break
                         }
                     }
-                case .Month( _):
+                case .Month(_):
                     break
-                case .Day(_, _):
+                case .Day(_):
                     break
                 }
             }
@@ -162,7 +162,7 @@ extension CustomDatePickerView : UICollectionViewDelegate,UICollectionViewDataSo
         case .Month(_):
             let cellWidth = (collectionView.frame.width / 4) - 8
             return CGSize(width: cellWidth, height: 44)
-        case .Day(_, _):
+        case .Day(_):
             let cellWidth = (collectionView.frame.width / 7) - 4
             return CGSize(width: cellWidth, height: 44)
         default:
